@@ -11,8 +11,9 @@ import patternRing from "../assets/images/pattern-rings.svg"
 
 const Techs = () => {
     return (
-        <div className={`relative w-full px-4 bg-[url("./assets/images/pattern-rings.svg")]  
-        bg-no-repeat bg-bottom desktop:px-40`}>
+        <div className="bg-black w-full">
+        <div className={`relative px-4 bg-[url("./assets/images/pattern-rings.svg")]  
+        bg-no-repeat bg-right-bottom desktop:px-40 overflow-hidden `}>
         <div className="border-t-2 border-grey text-center pt-10 pb-5 tablet:grid tablet:grid-cols-2 desktop:grid-cols-3 text-grey relative">
             {techs.map((tech) => {
                 return (
@@ -23,6 +24,7 @@ const Techs = () => {
                 )
             })}
             </div> 
+            </div>
             </div>
     )
     

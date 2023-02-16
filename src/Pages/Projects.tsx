@@ -46,14 +46,14 @@ const Project = ({ thumbnails, techs, title }: ProjectProps) => {
 
 const Projects = () => {
     return (
-        <div className="w-full bg-black desktop:p-40">
+        <div className="w-full bg-black desktop:px-40 desktop:py-10">
             <div className="flex justify-between items-center pb-4">
-                <div className="text-[2.5rem] font-bold desktop:text-xl">Projects</div>
+                <div className="text-[2.5rem] font-bold mx-4 desktop:text-xl desktop:pb-6">Projects</div>
                 <div className="flex justify-center tablet:justify-start pt-6 mb-8">
-                    <Button className="text-xs uppercase">Contact Me</Button>
+                    <Button className="text-xs uppercase mr-10">Contact Me</Button>
                 </div>
             </div>
-            <div className="mx-4 flex flex-col tablet:grid tablet:grid-cols-2 justify-between ">
+            <div className="flex flex-col tablet:grid tablet:grid-cols-2 mx-2">
                 {projects.map((project) => {
                     return (
                         <Project key={project[0]} thumbnails={project[2]} title={project[1]} techs={project[3]} />

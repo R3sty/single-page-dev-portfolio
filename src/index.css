@@ -4,6 +4,31 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.bg-profile {
+  background-image: url('./assets/images/image-profile-mobile.webp'), url('./assets/images/pattern-rings.svg'), url('./assets/images/pattern-circle.svg');
+  background-position: top center, -320px 125px, 125% 40%;
+  background-size: 174px 383px, auto, auto;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+  .bg-profile {
+    background-image: url('./assets/images/image-profile-desktop.webp'), url('./assets/images/pattern-circle.svg'), url('./assets/images/pattern-rings.svg'), ;
+    background-position: 76% 75%, 65px, top right;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bg-profile {
+  background-image: url('./assets/images/image-profile-desktop.webp'), url('./assets/images/pattern-circle.svg'), url('./assets/images/pattern-rings.svg'), ;
+  background-size: 445px, auto, auto;
+  background-position: 850px 75%, -100px 133px, 766px 521px;
+  padding-bottom: 24px;
+  margin-bottom: 21px;
+  }
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -49,7 +74,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #ff69b4;
   cursor: pointer;
   transition: border-color 0.25s;
 }

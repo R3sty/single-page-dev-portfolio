@@ -20,12 +20,12 @@ const Contact = () => {
     const onSubmit: SubmitHandler<Input> = (data) => console.log(data);
     return (
         <div>
-            <div className="desktop:flex desktop:flex-col-2 bg-darkGrey desktop:px-40">
-                <div className="text-center desktop:text-left">
+            <div className="desktop:flex desktop:flex-col-2 bg-darkGrey desktop:px-40 pt-6 ">
+                <div className="text-center desktop:text-left ">
                     <h1 className="desktop:text-xl text-[2.5rem] pb-5">Contact</h1> 
-                    <div className="pr-10">
+                    <div className="pr-10 desktop:pr-80">
                         <span> I would love to hear about your project and how I </span>
-                    <span>could help. Please fill in the form, and I'll get back </span>
+                        <span>could help. Please fill in the form, and I'll get back </span>
                         <span>to you as soon as I possible</span>  
                         </div>
                     </div>
@@ -70,6 +70,7 @@ const Contact = () => {
                     </div>
                 </form>
             </div>
+            <div className="border-b-2 border-grey desktop:mx-40 desktop:mb-4"></div>
             <Nav />
         </div>
     )
