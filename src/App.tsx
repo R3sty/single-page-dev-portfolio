@@ -4,6 +4,7 @@ import Hero from './Pages/Hero'
 import Projects from './Pages/Projects'
 import Techs from './Pages/Techs'
 import Contact from './Pages/Contact'
+import './index.css';
 
 function App() {
   const [count, setCount] = useState(0)

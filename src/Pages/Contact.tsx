@@ -4,7 +4,6 @@ import TextAreaInput from "../components/TextAreaInput";
 import Button from "../components/Button";
 import { useForm, SubmitHandler } from "react-hook-form";
 
-
 type Input = {
     name: string;
     email: string;
@@ -17,7 +16,9 @@ const Contact = () => {
         handleSubmit,
         formState: { errors },
     } = useForm<Input>();
+    
     const onSubmit: SubmitHandler<Input> = (data) => console.log(data);
+    
     return (
         <div>
             <div className="desktop:flex desktop:flex-col-2 bg-darkGrey desktop:px-40 pt-6 ">
@@ -27,8 +28,8 @@ const Contact = () => {
                         <span> I would love to hear about your project and how I </span>
                         <span>could help. Please fill in the form, and I'll get back </span>
                         <span>to you as soon as I possible</span>  
-                        </div>
                     </div>
+                </div>
                 <form onSubmit={handleSubmit(onSubmit)} className="mx-auto">
                     <TextInput
                         input={register("name", {
@@ -69,6 +70,11 @@ const Contact = () => {
                         </Button>
                     </div>
                 </form>
+                {Object.keys(errors).length > 0 && (
+                    <div className="text-red-500 font-bold">
+                        Please fix the errors above and try again.
+                    </div>
+                )}
             </div>
             <div className="border-b-2 border-grey desktop:mx-40 desktop:mb-4"></div>
             <Nav />
