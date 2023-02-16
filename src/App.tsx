@@ -9,8 +9,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="flex flex-col justify-center items-center h-screen w-screen">
-      <Nav />
+    <div className="font-sans flex flex-col items-center h-screen w-screen">
       <Hero />
       <Techs />
       <Projects />
