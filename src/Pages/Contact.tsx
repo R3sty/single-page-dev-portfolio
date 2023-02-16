@@ -16,7 +16,6 @@ const Contact = () => {
         handleSubmit,
         formState: { errors },
     } = useForm<Input>();
-    
     const onSubmit: SubmitHandler<Input> = (data) => console.log(data);
     
     return (
@@ -30,7 +29,9 @@ const Contact = () => {
                         <span>to you as soon as I possible</span>  
                     </div>
                 </div>
-                <form onSubmit={handleSubmit(onSubmit)} className="mx-auto">
+                <form
+                    onSubmit={handleSubmit(onSubmit)}
+                    className="mx-auto">
                     <TextInput
                         input={register("name", {
                             required: "This field can't be empty.",
@@ -65,16 +66,11 @@ const Contact = () => {
                         error={errors.message?.message}
                     />
                     <div className="py-8 flex justify-end mr-3">
-                        <Button className="" type="submit">
+                        <Button className="" type="button" onClick={handleSubmit(onSubmit)}>
                             SEND MESSAGE
                         </Button>
                     </div>
                 </form>
-                {Object.keys(errors).length > 0 && (
-                    <div className="text-red-500 font-bold">
-                        Please fix the errors above and try again.
-                    </div>
-                )}
             </div>
             <div className="border-b-2 border-grey desktop:mx-40 desktop:mb-4"></div>
             <Nav />

@@ -13,8 +13,8 @@ export type TextAreaInputProps = {
       ...props
   }: TextAreaInputProps) => {
       return (
-          <label
-htmlFor={fieldName}
+        <label
+          htmlFor={fieldName}
               className=" w-[21.4rem] tablet:w-[27.8rem]   flex flex-col px-4 "
           >
         <span className="invisible">={fieldName}</span>
