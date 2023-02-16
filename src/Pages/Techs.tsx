@@ -1,5 +1,3 @@
-import patternRing from "../assets/images/pattern-rings.svg"
-
     const techs = [
         ["HTML", "4 Years experience"],
         ["CSS", "4 Years experience"],
