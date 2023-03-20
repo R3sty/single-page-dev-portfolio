@@ -61,7 +61,6 @@ I had to position the background images in the header section of the website. It
 ### Continued development
 
 I have yet to...
-😓Hook the form up so it sends and stores the user's enquiry
 😓Add my own details (image, skills, projects) to replace the ones in the design
 
 ### Useful resources
